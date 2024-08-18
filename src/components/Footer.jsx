@@ -65,10 +65,10 @@ const Footer = () => {
           </div>
           <h3 style={{ marginTop: '50px' }}>mettā muse Accepts</h3>
           <div className='pay'>
-            <img src="../../gpay.png" alt="" className='gpay' />
-            <img src="../../master.webp" alt="" className='master' />
-            <img src="../../apple.png" alt="" className='apple' />
-            <img src="../../paypal.png" alt="" className='paypal' />
+            <img src="/gpay.png" alt="gpay" className='gpay' />
+            <img src="/master.webp" alt="master-card" className='master' />
+            <img src="/apple.png" alt="applepay" className='apple' />
+            <img src="/paypal.png" alt="paypal" className='paypal' />
           </div>
         </div>
       </div>
