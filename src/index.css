@@ -75,8 +75,10 @@
   font-weight: bold;
 }
 
-.container .bottom ul li {
+.container .bottom ul a {
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
 
 .container .border {
@@ -287,281 +289,6 @@
   font-size: 25px;
   cursor: pointer;
 }
-
-
-@media screen and (max-width: 1400px) {
-  .products-container {
-    max-width: 1250px;
-
-  }
-
-  .products-container .bottom .product-item {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-
-  .card {
-    width: 300px;
-    height: 462px;
-  }
-
-  .card .back {
-    width: 300px;
-    height: 400px;
-  }
-
-  .card img {
-    width: 180px;
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: 981px) and (max-width: 1280px) {
-  .products-container {
-    max-width: 1000px;
-  }
-
-  .products-container .bottom .product-item {
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 20px;
-  }
-
-  .card {
-    width: 250px;
-    height: 350px;
-  }
-
-  .card .back {
-    width: 280px;
-    height: 400px;
-  }
-
-  .card img {
-    width: 150px;
-    height: 220px;
-  }
-
-
-  .card .title {
-    width: 100%;
-    text-align: left;
-    padding-right: 50px;
-  }
-
-  .card .text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 35px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    color: rgba(136, 135, 146, 1);
-    width: 100%;
-    text-align: left;
-  }
-
-  .card .like {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 25px;
-  }
-}
-
-
-@media screen and (min-width: 700px) and (max-width: 980px) {
-  .products-container {
-    max-width: 800px;
-  }
-
-  .products-container .bottom .product-item {
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 20px;
-  }
-
-  .products-container .bottom {
-    /* background-color: yellow; */
-    grid-template-columns: 25% 75%;
-    gap: 25px;
-    padding: 10px;
-  }
-
-  .card {
-    width: 250px;
-    height: 350px;
-  }
-
-  .card .back {
-    width: 280px;
-    height: 400px;
-  }
-
-  .card img {
-    width: 150px;
-    height: 220px;
-  }
-
-
-  .card .title {
-    width: 100%;
-    text-align: left;
-    padding-right: 50px;
-  }
-
-  .card .text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 35px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    color: rgba(136, 135, 146, 1);
-    width: 100%;
-    text-align: left;
-  }
-
-  .card .like {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 451px) and (max-width: 700px) {
-  .products-container {
-    max-width: 500px;
-  }
-
-  .products-container .bottom .product-item {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
-  .products-container .bottom {
-    /* background-color: yellow; */
-    grid-template-columns: 45% 50%;
-    gap: 20px;
-    /* padding: 10px; */
-  }
-
-  .card {
-    width: 250px;
-    height: 350px;
-  }
-
-  .card .back {
-    width: 280px;
-    height: 400px;
-  }
-
-  .card img {
-    width: 150px;
-    height: 220px;
-  }
-
-
-  .card .title {
-    width: 100%;
-    text-align: left;
-    padding-right: 50px;
-  }
-
-  .card .text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 35px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    color: rgba(136, 135, 146, 1);
-    width: 100%;
-    text-align: left;
-  }
-
-  .card .like {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 300px) and (max-width: 450px) {
-  .products-container {
-    max-width: 300px;
-  }
-
-  .products-container .bottom .product-item {
-    /* grid-template-columns: repeat(auto-fill, minmax(2px, 1fr)); */
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-  }
-
-  .products-container .bottom {
-    grid-template-columns: 0% 50%;
-  }
-
-
-  .products-container .bottom .filter {
-    display: none;
-  }
-
-  .card {
-    width: 280px;
-    height: 300px;
-  }
-
-  .card .back {
-    width: 100px;
-    height: 300px;
-  }
-
-  .card img {
-    width: 140px;
-    height: 180px;
-  }
-
-  .card .title {
-    width: 100%;
-    text-align: left;
-    padding-right: 50px;
-  }
-
-  .card .text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 35px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    color: rgba(136, 135, 146, 1);
-    width: 100%;
-    text-align: left;
-  }
-
-  .card .like {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 25px;
-  }
-}
-
-
-
 
 /*                          Footer                        */
 
@@ -1110,8 +837,9 @@
     margin: 100px 0px 100px 10px;
   }
 
-  .container .mobile-menu ul li {
+  .container .mobile-menu ul a {
     display: flex;
+    text-decoration: none;
     flex-direction: column;
     font-size: 20px;
     gap: 20px;
@@ -1127,8 +855,6 @@
       left: 0px;
     }
   }
-
-
 
   .container .top {
     justify-content: space-between;

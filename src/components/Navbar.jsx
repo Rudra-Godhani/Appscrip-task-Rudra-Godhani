@@ -8,6 +8,7 @@ import { HiOutlineUser } from "react-icons/hi2";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { RiReactjsLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
     return (
         <div className='container'>
             <div className='top'>
-                <RiReactjsLine className='icon-1' style={{ cursor: 'pointer' }}/>
+                <RiReactjsLine className='icon-1' style={{ cursor: 'pointer' }} />
                 {
                     open
                         ? <IoMdClose className='hamburger-close' onClick={() => setOpen(!open)} />
@@ -36,22 +37,22 @@ const Navbar = () => {
             </div>
             <div className='bottom'>
                 <ul>
-                    <li>SHOP</li>
-                    <li>SKIllS</li>
-                    <li>STORIES</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT US</li>
+                    <Link to="/">SHOP</Link>
+                    <Link to="/">SKIllS</Link>
+                    <Link to="/">STORIES</Link>
+                    <Link to="/">ABOUT</Link>
+                    <Link to="/">CONTACT US</Link>
                 </ul>
             </div>
             {
                 open
                     ? <div className='mobile-menu'>
                         <ul>
-                            <li>SHOP</li>
-                            <li>SKIllS</li>
-                            <li>STORIES</li>
-                            <li>ABOUT</li>
-                            <li>CONTACT US</li>
+                            <Link to="/">SHOP</Link>
+                            <Link to="/">SKIllS</Link>
+                            <Link to="/">STORIES</Link>
+                            <Link to="/">ABOUT</Link>
+                            <Link to="/">CONTACT US</Link>
                         </ul>
                     </div>
                     : (<></>)
