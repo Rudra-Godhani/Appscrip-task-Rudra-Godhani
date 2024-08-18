@@ -2,6 +2,10 @@
 import React from 'react'
 import { IoLogoInstagram } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
+import { FaGooglePay, FaPaypal } from "react-icons/fa";
+import { FaCcMastercard } from "react-icons/fa6";
+import { SiApplepay } from "react-icons/si";
+import { FaCcPaypal } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -65,10 +69,10 @@ const Footer = () => {
           </div>
           <h3 style={{ marginTop: '50px' }}>mettā muse Accepts</h3>
           <div className='pay'>
-            <img src="/gpay.png" alt="gpay" className='gpay' />
-            <img src="/master.webp" alt="master-card" className='master' />
-            <img src="/apple.png" alt="applepay" className='apple' />
-            <img src="/paypal.png" alt="paypal" className='paypal' />
+            <FaGooglePay className='gpay' />
+            <FaCcMastercard className='master' />
+            <SiApplepay className='apple' />
+            <FaPaypal className='paypal' />
           </div>
         </div>
       </div>
