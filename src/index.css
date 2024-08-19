@@ -196,7 +196,7 @@
   font-weight: 400;
 }
 
-.filters .ideal_for .drop-icon { 
+.filters .ideal_for .drop-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -760,6 +760,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
 
+
   .container .bottom {
     display: none;
   }
@@ -899,19 +900,35 @@
     line-height: 1.8;
   }
 
+  .products-container .bottom {
+    grid-template-columns: 0% 100%;
+  }
+
+  .products-container .bottom .product-item {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .products-container .bottom .product-item.full-width {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
   .products-container {
     max-width: 300px;
   }
 
-  .products-container .bottom .product-item {
+  /* .products-container .bottom .product-item {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 10px;
-  }
+  } */
 
 
-  .products-container .bottom {
+  /* .products-container .bottom {
     grid-template-columns: 0% 50%;
-  }
+  } */
 
 
   .products-container .bottom .filter {
@@ -919,18 +936,18 @@
   }
 
   .card {
-    width: 280px;
-    height: 300px;
+    width: 136px;
+    height: 200px;
   }
 
   .card .back {
-    width: 100px;
-    height: 300px;
+    width: 80px;
+    height: 200px;
   }
 
   .card img {
-    width: 140px;
-    height: 180px;
+    width: 110px;
+    height:110px;
   }
 
   .card .title {
@@ -958,7 +975,7 @@
     position: absolute;
     bottom: 5px;
     right: 5px;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .footer {
